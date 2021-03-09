@@ -11,12 +11,13 @@
   <link rel="stylesheet" href="./web/style.css">
 	<link rel="icon" type="image/svg" href="./Medias/loud.svg">
 </head>
+
 <body>
-  <header class="navbar navbar-expand-md navbar-dark bg-dark">
-    <nav class="container-xxl flex-wrap" aria-label="Main navigation">
+  <header class="navbar navbar-expand-md navbar-light bg-warning">
+    <nav class="container-xxl flex-wrap" aria-label="Main navigation" id="HautDePage">
 
       <a href="#" class="navbar-brand ms-2">
-        <img src="./Medias/loud.svg" alt="Logo 'Lectique'" class="logo" height="60px" width="60px">
+        <img src="./Medias/loud.svg" alt="Logo 'Lectique'" height="60px" width="60px">
       </a>
 
         <button class="navbar-toggler collapsed" 
@@ -32,7 +33,7 @@
         <div class="navbar-collapse collapse" id="bdNavbar">
           <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
             <li class="nav-item col-12 col-md-auto">
-              <a href="#" class="nav-link p-2 active">Accueil</a>
+              <a href="#" class="nav-link p-2 active fw-bold">Accueil</a>
             </li>
             <li class="nav-item col-12 col-md-auto">
               <a href="./web/critiques1.html" class="nav-link p-2">Nos précédentes critiques</a> 
@@ -47,79 +48,104 @@
         </ul>
     </nav>
   </header>
+
   <main>
-    <article>
-    <h1 class="text-center mx-2">Bienvenue sur "Lectique" : l'association Avignonaise de lecture et de critique de livres sur Avignon</h1>
-      <div class="fst-italic mx-2 mt-4 text-break">  
-    <p>Ce site concerne une association fictive et a été entièrement créé pour les besoins d'une évaluation des 
-      compétences en développement web.</p>
-    <p>L'objectif étant d'évaluer la construction du site plutôt que son contenu, beaucoup de phrases sont donc issues
-      d'un site générateur de Lorem Ipsum (du faux texte employé dans la composition et la mise en page dans l'imprimerie
-      depuis les années 1500).</p>
-    <p>Mes coordonnées figurent en bas de page.</p>
-    <p>En attendant, bon visionnage!</p>
-      </div>
-      <img src="./Medias/open-books.jpg" alt="photo livres ouvert" class="img-fluid">
-    <h2>Notre association</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend, eros sit amet pharetra maximus, 
-        ligula felis vehicula nulla, sed volutpat risus erat in ex. Integer vitae ante semper, vestibulum libero sed, 
-        laoreet odio. Curabitur vulputate sem nec mi semper suscipit. Donec enim ante, varius vitae aliquam at, 
-        convallis finibus odio. Proin mauris orci, volutpat a risus a, semper vulputate lacus. Suspendisse id mauris 
-        vel dolor efficitur congue. In vel arcu ut lacus ultrices ultrices sed ut eros. Donec feugiat pretium leo, at 
-        vulputate ligula ultrices sed.</p>
-      <p>Pellentesque a lorem risus. Nam at mauris metus. In ornare lorem sit amet mattis lobortis. Duis congue ut 
-        lectus in porttitor. Pellentesque in leo mollis, venenatis nisi vel, imperdiet massa. Maecenas nec lectus 
-        nunc. Etiam nec tristique urna, ut hendrerit lectus. Fusce non eleifend urna, ut iaculis turpis. Nullam urna 
-        ipsum, interdum non sagittis nec, rhoncus ut dolor. In eu tincidunt erat, nec sollicitudin purus.</p>
-    <h2>Notre histoire</h2>
-      <img src="./Medias/young-girl-flipping-pages-of-a-book.jpg" 
-      alt="Photo femme ouvre un livre" 
-      class="rounded float-start">
-      <p>Sed at elementum leo, sit amet malesuada lorem. Integer sed nisl luctus, porta justo in, hendrerit ex. 
-        Praesent ullamcorper libero vitae tortor rutrum, non pulvinar ex suscipit. Sed nec commodo neque, sit amet 
-        porttitor dui. Nunc viverra, orci ut dictum posuere, magna felis consectetur leo, quis aliquam dui nisl quis 
-        quam. Mauris non auctor justo. Donec lacinia, leo imperdiet dictum accumsan, sem dolor sollicitudin diam, ac 
-        iaculis mi ipsum a urna. Ut congue sed ipsum non congue. Mauris vulputate a eros vitae mattis. Phasellus leo 
-        sem, pharetra eu cursus eu, vulputate et urna. Praesent nec tellus eu lorem lobortis suscipit. Quisque 
-        vulputate placerat tortor vel condimentum.</p>
-      <p>Integer mattis arcu purus, id luctus tortor finibus sit amet. Fusce porttitor condimentum mauris, in 
-        lacinia turpis posuere sed. Nam maximus quam eget lectus convallis sollicitudin. Donec pulvinar rhoncus 
-        neque, eu tristique turpis varius vitae. Vestibulum diam ligula, efficitur commodo purus ac, efficitur 
-        fermentum elit. Morbi faucibus vitae neque a convallis. Sed nec lectus at tortor pretium sagittis quis ut 
-        nunc.</p>
-      <p>Cras lacinia lectus et consequat pretium. Nullam eu erat malesuada, efficitur lorem vitae, bibendum diam. 
-        Curabitur sollicitudin eros at iaculis tincidunt. Aenean rutrum lacinia suscipit. Duis porta ligula sed 
-        justo auctor bibendum. Aenean tincidunt interdum consequat. Donec accumsan elementum condimentum. Integer 
-        a nisi viverra, eleifend sem id, ullamcorper tortor. Cras sit amet nunc velit. Aenean interdum vulputate 
-        vestibulum. Vestibulum id justo ligula. Mauris auctor feugiat est, tempus finibus ex pulvinar vel. Aenean 
-        auctor laoreet est luctus elementum. Mauris vulputate elit mi, bibendum tincidunt sapien gravida vel.</p>
-        <img src="https://picsum.photos/id/24/300" alt="Photo d'un livre ouvert" width="100%">
-    <h2>Et si notre histoire devenais aussi la vôtre?</h2>
-      <p>Mauris sodales urna velit, ac tincidunt magna laoreet at. Quisque euismod vel elit sed euismod. Vestibulum 
-				ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent scelerisque risus ipsum, 
-				at bibendum lorem posuere efficitur. Nullam rhoncus eleifend pretium. Suspendisse ullamcorper varius mauris quis 
-				feugiat. Phasellus sodales in massa a vestibulum. Curabitur posuere semper dui at auctor. Phasellus rhoncus est 
-				lorem. Proin at ante at enim cursus condimentum. Cras sed enim nulla. Vestibulum vel semper est, et vestibulum 
-				ligula. Aliquam erat volutpat. Pellentesque ipsum velit, vehicula vel aliquam in, tempus eget risus. Aliquam 
-				fringilla ultricies ante eu semper.</p>
-  </article>
-  <div class="position-fixed bottom-0 end-0 mb-2 me-2">
-    <svg xmlns="http://www.w3.org/2000/svg" 
-    width="20" 
-    height="20" 
-    fill="currentColor" 
-    class="bi bi-arrow-up-circle-fill" 
-    viewBox="0 0 16 16">
+    <section>
+      <h1 class="text-center mx-2 pt-3">Bienvenue sur "Lectique" : l'association Avignonaise de lecture et de critique de 
+      livres sur Avignon</h1>
+      <article class="text-center fst-italic mx-2 mt-4 avertissement">
+        <p>Ce site concerne une association fictive qui a été entièrement créée pour les besoins d'une évaluation des 
+        compétences en développement web.</p>
+        <p>L'objectif étant d'évaluer la construction du site plutôt que son contenu, beaucoup de phrases sont donc issues
+        d'un site générateur de Lorem Ipsum (du faux texte employé dans la composition et la mise en page dans l'imprimerie).</p>
+        <p>Pour toute demande de renseignements, mes coordonnées figurent en bas de page.</p>
+        <p>En attendant, bon visionnage!</p>
+      </article>
+      <article>
+        <div class="overflow-hidden image_titre my-4">
+          <img src="./Medias/open-books.jpg" alt="photo livres ouvert" class="img-fluid image_acceuil">
+          <div class="titre">
+            <h2 class="text-center fw-bold">Notre association</h2>
+          </div>
+        </div>
+        <div class="mx-2 texte_explicatif">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend, eros sit amet pharetra maximus, 
+          ligula felis vehicula nulla, sed volutpat risus erat in ex. Integer vitae ante semper, vestibulum libero sed, 
+          laoreet odio. Curabitur vulputate sem nec mi semper suscipit. Donec enim ante, varius vitae aliquam at, 
+          convallis finibus odio. Proin mauris orci, volutpat a risus a, semper vulputate lacus. Suspendisse id mauris 
+          vel dolor efficitur congue. In vel arcu ut lacus ultrices ultrices sed ut eros. Donec feugiat pretium leo, at 
+          vulputate ligula ultrices sed.</p>
+          <p>Pellentesque a lorem risus. Nam at mauris metus. In ornare lorem sit amet mattis lobortis. Duis congue ut 
+          lectus in porttitor. Pellentesque in leo mollis, venenatis nisi vel, imperdiet massa. Maecenas nec lectus 
+          nunc. Etiam nec tristique urna, ut hendrerit lectus. Fusce non eleifend urna, ut iaculis turpis. Nullam urna 
+          ipsum, interdum non sagittis nec, rhoncus ut dolor. In eu tincidunt erat, nec sollicitudin purus.</p>
+        </div>
+      </article>
+      <article>
+        <div class="overflow-hidden image_titre my-4">
+          <img src="./Medias/classic-and-rare-books.jpg" 
+          alt="Photo femme ouvre un livre" 
+          class="img-fluid image_acceuil">
+          <div class="titre">
+            <h2 class="text-center fw-bold">Notre histoire</h2>
+          </div>
+        </div>
+        <div class="mx-2 texte_explicatif">
+          <p>Sed at elementum leo, sit amet malesuada lorem. Integer sed nisl luctus, porta justo in, hendrerit ex. 
+          Praesent ullamcorper libero vitae tortor rutrum, non pulvinar ex suscipit. Sed nec commodo neque, sit amet 
+          porttitor dui. Nunc viverra, orci ut dictum posuere, magna felis consectetur leo, quis aliquam dui nisl quis 
+          quam. Mauris non auctor justo. Donec lacinia, leo imperdiet dictum accumsan, sem dolor sollicitudin diam, ac 
+          iaculis mi ipsum a urna. Ut congue sed ipsum non congue. Mauris vulputate a eros vitae mattis. Phasellus leo 
+          sem, pharetra eu cursus eu, vulputate et urna. Praesent nec tellus eu lorem lobortis suscipit. Quisque 
+          vulputate placerat tortor vel condimentum.</p>
+          <p>Integer mattis arcu purus, id luctus tortor finibus sit amet. Fusce porttitor condimentum mauris, in 
+          lacinia turpis posuere sed. Nam maximus quam eget lectus convallis sollicitudin. Donec pulvinar rhoncus 
+          neque, eu tristique turpis varius vitae. Vestibulum diam ligula, efficitur commodo purus ac, efficitur 
+          fermentum elit. Morbi faucibus vitae neque a convallis. Sed nec lectus at tortor pretium sagittis quis ut 
+          nunc.</p>
+        </div>
+      </article>
+      <article>
+        <div class="overflow-hidden image_titre my-4">
+          <img src="./Medias/open-single-book.jpg" alt="Photo d'un livre ouvert" class="img-fluid image_acceuil">
+          <div class="titre">
+            <h2 class="text-center fw-bold">Et si notre histoire devenais aussi la vôtre?</h2>
+          </div>
+        </div>
+        <div class="pb-4 mx-2 texte_explicatif">
+          <p>Mauris sodales urna velit, ac tincidunt magna laoreet at. Quisque euismod vel elit sed euismod. Vestibulum 
+          ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent scelerisque risus ipsum, 
+          at bibendum lorem posuere efficitur. Nullam rhoncus eleifend pretium. Suspendisse ullamcorper varius mauris quis 
+          feugiat. Phasellus sodales in massa a vestibulum. Curabitur posuere semper dui at auctor. Phasellus rhoncus est 
+          lorem. Proin at ante at enim cursus condimentum. Cras sed enim nulla. Vestibulum vel semper est, et vestibulum 
+          ligula. Aliquam erat volutpat. Pellentesque ipsum velit, vehicula vel aliquam in, tempus eget risus. Aliquam 
+          fringilla ultricies ante eu semper.</p>
+        </div>
+      </article>
+      </section>
+    <div class="position-fixed bottom-0 end-0 mb-2 me-2">
+      <a href="#HautDePage">
+        <svg 
+      role="button"
+      xmlns="http://www.w3.org/2000/svg" 
+      width="40" 
+      height="40" 
+      fill="currentColor" 
+      class="bi bi-arrow-up-circle-fill logo" 
+      viewBox="0 0 16 16">
       <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 
       7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-    </svg>
-  </div>
+      </svg>
+      </a>
+    </div>
   </main>
-  <footer>
-    <div class="text-center">Créé avec plaisir par : G@bourg développement</div>
+
+  <footer class="bg-warning">
+    <div class="text-center pt-3">Créé avec plaisir par : G@bourg développement</div>
     <div class="text-center">contact@gabourg-developpement.fr</div>
     <div class="text-center">2021</div>
   </footer>
+
   <script src="./Tools/jquery-3.5.1.min.js"></script>
   <script src="./Tools/bootstrap.bundle.min.js"></script>
 </body>

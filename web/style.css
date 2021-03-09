@@ -1,3 +1,50 @@
+@font-face{
+  font-family: Gentium Book Basic;
+  src: url(../Tools/GentiumBookBasic-Regular.ttf);
+}
+
+body{
+  font-family: Gentium Book Basic;
+}
+
 .logo{
-  filter: invert(97%) sepia(1%) saturate(334%) hue-rotate(6deg) brightness(91%) contrast(92%);
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(139deg) brightness(100%) contrast(104%);
+}
+
+.avertissement{
+  font-size: 0.8em;
+}
+
+.texte_explicatif{
+  text-align: justify;
+  text-indent: 10%;
+}
+
+.image_titre{
+  position: relative;
+  height: 200px;
+  z-index: 1;
+}
+.image_acceuil{
+  position: absolute;
+  opacity: 0.40;
+  top : 0;
+  left: 0;
+}
+
+.titre{
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  z-index: 2;
+}
+
+.pleine{
+  stroke: grey;
+  fill: yellow;
+}
+
+.vide{
+  stroke: grey;
+  fill: grey;
 }
