@@ -17,7 +17,7 @@ body{
 
 .texte_explicatif{
   text-align: justify;
-  text-indent: 10%;
+  text-indent: 30px;
 }
 
 .image_titre{
@@ -27,7 +27,7 @@ body{
 }
 .image_acceuil{
   position: absolute;
-  opacity: 0.40;
+  opacity: 0.45;
   top : 0;
   left: 0;
 }
@@ -35,7 +35,7 @@ body{
 .titre{
   position: absolute;
   width: 100%;
-  top: 40%;
+  top: 44%;
   z-index: 2;
 }
 
@@ -47,4 +47,10 @@ body{
 .vide{
   stroke: grey;
   fill: grey;
+}
+
+.image_livre{
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
 }
