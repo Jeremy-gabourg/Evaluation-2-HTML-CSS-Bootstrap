@@ -4,19 +4,20 @@
   <meta charset="UTF-8">
   <meta name="author" content="G@bourg développement">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lectique : l'association avignonnaise de lecture & de critique de Livres</title>
+  <title>Lectique Avignon : l'association N°1 de lecture & de critique de Livres</title>
   <meta name="description" content="Chez Lectique, nous avons la passion du livre et nous l'entretenons par le partage
   à travers nos ateliers lecture chaque semaine. Venez nous rejoindre tous les vendredis soirs!">
   <link rel="stylesheet" href="../Tools/bootstrap.min.css">
   <link rel="stylesheet" href="./style.css">
-  <link rel="icon" type="image/svg" href="../Medias/loud.svg">
+	<link rel="icon" type="image/svg" href="../Medias/loud.svg">
 </head>
-<body>
-  <header class="navbar navbar-expand-md navbar-dark bg-dark">
-    <nav class="container-xxl flex-wrap" aria-label="Main navigation">
 
-      <a href="#" class="navbar-brand ms-2">
-        <img src="../Medias/loud.svg" alt="Logo 'Lectique'" class="logo" height="60px" width="60px">
+<body>
+  <header class="navbar navbar-expand-md navbar-light bg-warning">
+    <nav class="container-xxl flex-wrap" aria-label="Main navigation" id="HautDePage">
+
+      <a href="../accueil.html" class="navbar-brand ms-2">
+        <img src="../Medias/loud.svg" alt="Logo 'Lectique'" height="60px" width="60px">
       </a>
 
         <button class="navbar-toggler collapsed" 
@@ -38,7 +39,7 @@
               <a href="./critiques1.html" class="nav-link p-2">Nos précédentes critiques</a> 
             </li>
             <li class="nav-item col-12 col-md-auto">
-              <a href="#" class="nav-link p-2 active">Nos prochains rendez-vous</a> 
+              <a href="#" class="nav-link p-2 active fw-bold">Nos prochains rendez-vous</a> 
             </li>
             <li class="nav-item col-12 col-md-auto">
               <a href="./contacts.html" class="nav-link p-2">Nous contacter</a> 
@@ -47,46 +48,74 @@
         </ul>
     </nav>
   </header>
-  <article>
+  <section>
     <h1>Nos prochains rendez-vous</h1>
-    <p>Ce site concerne une association fictive et a été entièrement créé pour les besoins d'une évaluation des 
-      compétences en développement web.</p>
-    <p>L'objectif étant d'évaluer la construction du site plutôt que son contenu, beaucoup de phrases sont donc issues
-      d'un site générateur de Lorem Ipsum (du faux texte employé dans la composition et la mise en page dans l'imprimerie
-      depuis les années 1500).</p>
-    <p>Si vous avez un projet de construction de sites web, merci de me contacter aux coordonnées en bas de page.</p>
-    <p>En attendant, bon visionnage!</p>
-		<div>Haut de page</div>
 
     <h2>Retrouvez-nous tous les vendredis à la bibliothèque municipale Ceccano d'Avignon (adresse disponible 
       ici 
       sur la page "Nous rencontrer")</h2>
-      <p>Nous commençons par 1h de lecture puis nous enchainons pas nos partages sur un des livres choisis afin de 
-        rédiger une des critiques qui figurent sur notre site</p>
-      <p>Voici le planning des prochains livres abordés lors de nos rencontres hebdomadaires:</p>
+      <p>Nous commençons par 1h de lecture puis nous enchainons pas des partages sur nos lectures personnelles. Enfin, 
+      lorsque nous finissons la lecture en groupe d'un des livres choisis, nous en rédigeons la critique qui viendra 
+      s'ajouter à celles figurant sur notre site.</p>
+      <p>Voici le planning de lecture de nos prochaines rencontres hebdomadaires:</p>
       <p>Titre : Autant en emporte le vent</p>
       <p>Auteur : Margaret Mitchell</p>
       <p>Genre : Roman historique</p>
       <p>Editeur : Macmillan Publisher</p>
       <p>pages 550 à 600</p>
-    <h2>Mais nous nous retrouvons aussi tous les trimestres avec les autres passionnés des associations "Lectique" de 
-      toute la France pour des ateliers à thèmes.</h2>
-      <p>Voici les prochaines dates de nos retrouvailles :</p>
-      <p>Samedi 13 mars 2021 - Lieu : Salle de spectacle CEPAC Silo, 35 Quai du Lazaret, 13002 MARSEILLE - Thème : le 
-        roman et sa place dans notre société hyperconnecté</p>
-      <p>Samedi 19 juin 2021 - Lieu : Zénith du Grand Rond, 23 rue des Potiers, 31000 TOULOUSE - Thème : les 
+      <p>Titre : Orgueil et Préjugés</p>
+      <p>Auteur : Jane Austen</p>
+      <p>Genre : Romantique</p>
+    <h2>Recontres nationales</h2>
+      <p>L'occasion pour tous les passionés de l'association "Lectique" de la France entière de se réunir pour des 
+      ateliers à thèmes.</p> 
+      <p>Voici les prochaines dates des rencontres :</p>
+      <p class="mt-5">Samedi 19 juin 2021</p> 
+      <p>Lieu : Salle de spectacle CEPAC Silo, 35 Quai du Lazaret, 13002 MARSEILLE</p>
+      <p>Thème : le roman et sa place dans notre société hyperconnectée</p>
+        <a href="../Tools/myevents_19-06-21.ics" role="button" class="btn btn-outline-warning">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-plus-fill" viewBox="0 0 16 16">
+            <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zM8.5 8.5V10H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V11H6a.5.5 0 0 1 0-1h1.5V8.5a.5.5 0 0 1 1 0z"/>
+          </svg>
+          Ajouter à mon calendrier
+        </a>
+        <a href="https://goo.gl/maps/quaLgcsoc4BkQDf57" role="button" target="-blank" class="btn btn-outline-warning">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+          </svg>
+          Localiser sur Google Maps
+        </a>
+
+      <p>Samedi 4 septembre 2021 - Lieu : Théâtre du Grand Rond, 23 rue des Potiers, 31000 TOULOUSE - Thème : les 
         autobiographies qui ont marqué notre histoire</p>
-      <p>Samedi 4 septembre 2021 - Lieu : Opéra National de Bordeaux - Grand-Théâtre, Place de la Comédie, 33000 
-        BORDEAUX - Thème : La poésie moderne</p>
-      <p>Samedi 11 décembre 2021 - Lieu : Le Grand T, 84 rue Général Buat, 44000 NANTES - Thème : Les pièces de 
-        théâtre</p>
-      <p>Samedi 12 février 2022 - Lieu : Alhambra Théâtre Musi-Hall Show, 21 rue Yves Toudic, 75010 PARIS - Thème : les
+      <p>Samedi 11 décembre 2021 - Lieu : Opéra National de Bordeaux - Grand-Théâtre, Place de la Comédie, 33000 
+        BORDEAUX - Thème : Les pièces de théâtre</p>
+      <p>Samedi 12 février 2022 - Lieu : Le Grand T, 84 rue Général Buat, 44000 NANTES - Thème : La poésie moderne</p>
+      <p>Samedi 16 avril 2022 - Lieu : Alhambra Théâtre Musi-Hall Show, 21 rue Yves Toudic, 75010 PARIS - Thème : les
         romans graphiques et les bandes dessinées</p>
       <p>Nous serons heureux de vous compter parmi nous à l'un de ces évènements! Alors à bientôt!</p>
-  </article>
-  <footer>
-    <div>Webmaster : G@bourg développement - contact@gabourg-développement.fr</div>
-    <div>2021</div>
+  </section>
+
+  <div class="position-fixed bottom-0 end-0 mb-2 me-2">
+    <a href="#HautDePage">
+      <svg 
+    role="button"
+    xmlns="http://www.w3.org/2000/svg" 
+    width="40" 
+    height="40" 
+    fill="currentColor" 
+    class="bi bi-arrow-up-circle-fill logo" 
+    viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 
+    7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+    </svg>
+    </a>
+  </div>
+
+  <footer class="bg-warning">
+    <div class="text-center pt-3">Créé avec plaisir par : G@bourg développement</div>
+    <div class="text-center">contact@gabourg-developpement.fr</div>
+    <div class="text-center">2021</div>
   </footer>
   <script src="../Tools/jquery-3.5.1.min.js"></script>
   <script src="../Tools/bootstrap.bundle.min.js"></script>
