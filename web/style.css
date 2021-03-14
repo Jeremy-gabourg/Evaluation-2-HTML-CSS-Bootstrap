@@ -53,3 +53,7 @@ body{
   width: 100%;
   max-width: 200px;
 }
+
+.icone-bouton{
+  vertical-align: text-top;
+}
