@@ -19,7 +19,8 @@
       <a href="../accueil.html" class="navbar-brand ms-2">
         <img src="../Medias/loud.svg" alt="Logo 'Lectique'" height="60px" width="60px">
       </a>
-
+        <!--Bar de navigation linéaire pour des tailles d'écran supérieures à medium (tablettes et PC) mais menu 
+          déroulant si inférieures (téléphones)-->
         <button class="navbar-toggler collapsed" 
         type="button" 
         data-bs-toggle="collapse" 
@@ -48,32 +49,56 @@
         </ul>
     </nav>
   </header>
-  <article>
-    <h1>Nous rencontrer / Nous contacter</h1> 
-    <h2>Nos rencontres hebdomadaires :</h2>
-    <h2>Nous écrire un courrier:</h2>
-    <h2>Nous envoyer un e-mail :</h2>
-    <h2>Notre siège social :</h2>
-  </article>  
-  <div class="position-fixed bottom-0 end-0 mb-2 me-2">
-    <a href="#HautDePage">
-      <svg 
-    role="button"
-    xmlns="http://www.w3.org/2000/svg" 
-    width="40" 
-    height="40" 
-    fill="currentColor" 
-    class="bi bi-arrow-up-circle-fill logo" 
-    viewBox="0 0 16 16">
-    <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 
-    7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-    </svg>
-    </a>
-  </div>
+  <main>
+    <section class="text-center mx-2">
+      <h1>Nous contacter *</h1> 
+      <h2 class="fs-3 mt-4">Nous envoyer un e-mail</h2>
+        <p class="mb-0">Pour toute demande <span class="fst-italic text-decoration-underline">d'inscription</span> à notre association ou pour tout renseignement, veuillez nous contacter à 
+          l'adresse générique dédiée :</p>
+            <a href="mailto:exemple@mail-exemple.com">exemple@mail-exemple.com</a>
+      <h2 class="fs-3 mt-4">Nous appeler</h2>
+          <p>Si vous préférez avoir affaire à un humain plutôt qu'à une machine, nous partageons votre phobie de voir, un 
+            jour, un monde dirigé par la machine. N'hésitez donc pas à contacter un de nos formidables spécimens humains :</p>
+            <p>Marie DUPONT (présidente) : <a href="tel:0600000000">06 00 00 00 00</a></p>
+            <p>Eric DUBOIS (secrétaire) : <a href="tel:0601010101">06 01 01 01 01</a></p>
+            <p>Martine BERNARD (trésorière) : <a href="tel:0602020202">06 02 02 02 02</a></p>
+      <h2 class="fs-3 mt-4">Nous écrire un courrier</h2>
+        <p>Si vous êtes de la vieille école et que, pour vous, le minitel c'est l'avenir, vous avez aussi la possibilité
+          de nous écrire à l'adresse de notre <span class="fst-italic">siège social</span>  :</p>
+          <p><span class="fw-bold">Association Lectique Avignon</span>, Avenue factice, 84000 AVIGNON</p>
+    </section>
+  
+    <article class="text-center fst-italic mx-2 mt-4 avertissement">
+      <p>* Ce site concerne une association fictive qui a été entièrement créée pour les besoins d'une évaluation des 
+      compétences en développement web.</p>
+      <p>L'objectif étant d'évaluer la construction du site plutôt que son contenu, notamment l'affichage pensé en 
+      priorité pour les appareils mobiles, beaucoup de phrases sont donc issues d'un site générateur de Lorem Ipsum 
+      (du faux texte employé dans la composition et la mise en page dans l'imprimerie).</p>
+      <p class="mb-0">Pour toute demande de renseignements, vous pouvez me contacter à l'adresse mail figurant ci-dessous.</p>
+      <p>En attendant, bon visionnage!</p>
+    </article>
+
+    <!--Affichage du bouton de retour en haut de page-->
+    <div class="position-fixed bottom-0 end-0 mb-2 me-2">
+      <a href="#HautDePage">
+        <svg 
+      role="button"
+      xmlns="http://www.w3.org/2000/svg" 
+      width="40" 
+      height="40" 
+      fill="currentColor" 
+      class="bi bi-arrow-up-circle-fill logo" 
+      viewBox="0 0 16 16">
+      <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 
+      7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+      </svg>
+      </a>
+    </div>
+  </main>
 
   <footer class="bg-warning">
     <div class="text-center pt-3">Créé avec plaisir par : G@bourg développement</div>
-    <div class="text-center">contact@gabourg-developpement.fr</div>
+    <div class="text-center"><a href="mailto:contact@gabourg-developpement.fr">contact@gabourg-developpement.fr</a></div>
     <div class="text-center">2021</div>
   </footer> 
   <script src="../Tools/jquery-3.5.1.min.js"></script> 

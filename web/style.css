@@ -1,12 +1,15 @@
+/*Importation de la police d'écriture style 'livre'*/
 @font-face{
   font-family: Gentium Book Basic;
   src: url(../Tools/GentiumBookBasic-Regular.ttf);
 }
 
+/*Application de la nouvelle police à tout le document*/
 body{
   font-family: Gentium Book Basic;
 }
 
+/*Retirer la couleur bleue de l'icone 'retour haut de page' devenu bleue à cause du lien de l'ancre*/
 .logo{
   filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(139deg) brightness(100%) contrast(104%);
 }
@@ -39,11 +42,11 @@ body{
   z-index: 2;
 }
 
+/*Couleurs de remplissage et de contour des étoiles de note des pages de critique*/
 .pleine{
   stroke: grey;
   fill: yellow;
 }
-
 .vide{
   stroke: grey;
   fill: grey;
@@ -54,6 +57,7 @@ body{
   max-width: 200px;
 }
 
+/*Corriger l'alignement des icones dans les boutons*/
 .icone-bouton{
   vertical-align: text-top;
 }
