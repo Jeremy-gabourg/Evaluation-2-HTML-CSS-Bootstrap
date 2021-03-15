@@ -28,7 +28,8 @@ body{
   height: 200px;
   z-index: 1;
 }
-.image_acceuil{
+
+.image_accueil{
   position: absolute;
   min-height: 200px;
   opacity: 0.45;
@@ -36,11 +37,16 @@ body{
   left: 0;
 }
 
-.titre{
+.titre-conteneur{
   position: absolute;
   width: 100%;
-  top: 44%;
+  height: 100%;
   z-index: 2;
+}
+
+.titre{
+  height: 200px;
+  width: 100%;
 }
 
 /*Couleurs de remplissage et de contour des étoiles de note des pages de critique*/
