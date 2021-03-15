@@ -23,13 +23,14 @@ body{
   text-indent: 30px;
 }
 
-.image_titre{
+.conteneur_image_titre{
   position: relative;
   height: 200px;
   z-index: 1;
 }
 .image_acceuil{
   position: absolute;
+  min-height: 200px;
   opacity: 0.45;
   top : 0;
   left: 0;
