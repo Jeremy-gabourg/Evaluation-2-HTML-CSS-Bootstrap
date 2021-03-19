@@ -9,6 +9,19 @@ body{
   font-family: Gentium Book Basic;
 }
 
+/*Affichage du sommaire de la page d'accueil uniquement sur écrans de petites tailles grâce aux media queries -
+désactivation suite bug d'affichage ou de traitement par heroku*/
+@media (max-width: 744px){
+  .table-content{
+    display: block;
+  }
+}
+@media (min-width: 744px){
+  .table-content{
+    display: none;
+  }
+}
+
 /*Retirer la couleur bleue de l'icone 'retour haut de page' devenu bleue à cause du lien de l'ancre*/
 .logo{
   filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(139deg) brightness(100%) contrast(104%);
@@ -66,4 +79,61 @@ de façon responsive*/
 /*Corriger l'alignement des icones dans les boutons*/
 .icone-bouton{
   vertical-align: text-top;
+}
+
+/*Affichage du lieu de rencontre hebdomadaire sur la page 'nos prochains RDV' uniquement sur écrans de petites et moyennes tailles
+grâce aux media queries*/
+@media (max-width: 768px) {
+  .bouton-localiser-local{
+    display: inline-flex;
+  }
+  .iframe-maps-local{
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .bouton-localiser-local{
+    display: none;
+  }
+  .iframe-maps-local{
+    display: flex;
+  }
+}
+
+/*Affichage des lieux de rencontre nationaux sur la page 'nos prochains RDV' uniquement sur écrans de petites tailles 
+grâce aux media queries*/
+@media (max-width: 991px) {
+  .bouton-localiser{
+    display: inline-flex;
+  }
+  .iframe-maps{
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .bouton-localiser{
+    display: none;
+  }
+  .iframe-maps{
+    display: flex;
+  }
+}
+
+/*Affichage du planning sous forme de tableau sur écran large mais sous forme de liste non-ordonné sans Bootstrap sur 
+petits écrans*/
+@media (max-width: 562px) {
+  .liste-planning{
+    display: flex;
+  }
+  .tableau-planning{
+    display: none;
+  }
+}
+@media (min-width: 562px) {
+  .liste-planning{
+    display: none;
+  }
+  .tableau-planning{
+    display: flex;
+  }
 }

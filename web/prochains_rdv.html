@@ -55,10 +55,12 @@
         <p class="text-md-center">Retrouvez notre groupe de lecture tous les vendredis à la bibliothèque municipale Ceccano d'Avignon (située au 
         2B rue Laboureur):</p>
         <!--Affichage de l'iframe avec cartographie de Google maps pour des tailles d'écrans moyennes ou plus grandes 
-          mais affichage du bouton de renvoie vers maps dans un nouvel onglet pour un écran de petite taille-->
+        mais affichage du bouton de renvoie vers maps dans un nouvel onglet pour un écran de petite taille. L'utilité de
+        ce changement d'affichage est davantage une question de facilité d'utilisation de l'application sur les mobiles 
+        plutôt que l'utilisation parfois compliqué d'encarts supplémentaires sur une page web-->
         <div class="container-fluid">
           <div class="row">
-            <div class="col d-inline-flex d-md-none justify-content-center">
+            <div class="col bouton-localiser-local justify-content-center">
               <a href="https://goo.gl/maps/ZYUWaEbftiEN3kSM7" role="button" target="-blank" class="btn btn-outline-warning">
                 <svg xmlns="http://www.w3.org/2000/svg" 
                 width="16" 
@@ -71,7 +73,7 @@
                 Localiser sur Google Maps
               </a>
             </div> 
-            <div class="d-none d-md-flex col-md justify-content-center">
+            <div class="iframe-maps-local col-md justify-content-center">
               <div class="mapouter">
                 <div class="gmap_canvas">
                   <iframe 
@@ -100,7 +102,7 @@
 
         <!--Affichage des prochaines lectures sous format de liste non-ordonnée pour un écran de petite taille mais sous 
           forme de tableau pour des écrans moyens et plus grand-->
-        <div class="d-flex d-md-none">
+        <div class="liste-planning">
           <!--Liste non-ordonnée sans utilisation de Bootstrap. Le rendu est suffisant et plus clair sans Bootstrap-->
           <ul>
             <li>Les premiers vendredis du mois, nous lisons 30 pages du roman historique "Autant en emporte le vent" de 
@@ -115,8 +117,8 @@
             <li>Les mois où il y a 5 vendredis, nous lirons des rédactions proposés par nos passionés les semaines précédentes.</li>
           </ul>
         </div>
-        <!--Tableau avec Bootstrap sur les écrans plus grands que la taille medium définit par Bootstrap-->
-        <div class="d-none d-md-flex">
+        <!--Tableau avec Bootstrap sur les écrans de grandes tailles-->
+        <div class="tableau-planning">
           <table class="table table-striped table-hover align-middle text-center">
             <thead>
               <tr>
@@ -184,8 +186,8 @@
   
         <p class="text-center mx-2">L'occasion est donnée, chaque trimestre, à tous les passionés des associations "Lectique" 
         de la France entière de se réunir pour des ateliers à thèmes. Voici les prochaines dates :</p>
-        <!--Affichage des boutons de renvoie vers Google maps pour des écrans de petite taille mais des iframe de 
-          cartographie pour des écrans larges et plus grands-->
+        <!--Affichage des boutons de renvoie vers Google maps pour des écrans de petites et moyennes tailles mais des iframe de 
+          cartographie pour des écrans larges et plus grands (grâce à Grid et aux breakpoints Bootstrap)-->
         <div class="container-fluid m-0">
   
           <div class="row">
@@ -208,7 +210,7 @@
                   </a>
                 </div>
                 <div>
-                  <a href="https://goo.gl/maps/quaLgcsoc4BkQDf57" role="button" target="-blank" class="btn btn-outline-warning d-lg-none">
+                  <a href="https://goo.gl/maps/quamdcsoc4BkQDf57" role="button" target="-blank" class="btn btn-outline-warning bouton-localiser">
                     <svg xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
                     height="16" 
@@ -222,7 +224,7 @@
                 </div>
               </div>
             </div>
-            <div class="d-none d-lg-flex col col-lg justify-content-center mapouter">
+            <div class="iframe-maps col col-lg justify-content-center mapouter">
               <div class="gmap_canvas">
                 <iframe 
                 width="300" 
@@ -262,7 +264,7 @@
                   </a>
                 </div>
                 <div>
-                  <a href="https://goo.gl/maps/x8VM2dgh5gsnbgSNA" role="button" target="-blank" class="btn btn-outline-warning d-lg-none">
+                  <a href="https://goo.gl/maps/x8VM2dgh5gsnbgSNA" role="button" target="-blank" class="btn btn-outline-warning bouton-localiser">
                     <svg xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
                     height="16" 
@@ -276,7 +278,7 @@
                 </div>
               </div>
             </div>
-              <div class="d-none d-lg-flex col col-lg justify-content-center mapouter">
+              <div class="iframe-maps col col-lg justify-content-center mapouter">
                 <div class="gmap_canvas">
                   <iframe 
                   width="300" 
@@ -316,7 +318,7 @@
                   </a>
                 </div>
                 <div>
-                  <a href="https://g.page/operadebordeaux?share" role="button" target="-blank" class="btn btn-outline-warning d-lg-none">
+                  <a href="https://g.page/operadebordeaux?share" role="button" target="-blank" class="btn btn-outline-warning bouton-localiser">
                     <svg xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
                     height="16" 
@@ -330,7 +332,7 @@
                 </div>
               </div>
             </div>
-            <div class="d-none d-lg-flex col col-lg justify-content-center mapouter">
+            <div class="iframe-maps col col-lg justify-content-center mapouter">
               <div class="gmap_canvas">
                 <iframe 
                 width="300" 
@@ -370,7 +372,7 @@
                   </a>
                 </div>
                 <div>
-                  <a href="https://goo.gl/maps/u4sGgBbfTcu7uEHY9" role="button" target="-blank" class="btn btn-outline-warning d-lg-none">
+                  <a href="https://goo.gl/maps/u4sGgBbfTcu7uEHY9" role="button" target="-blank" class="btn btn-outline-warning bouton-localiser">
                     <svg xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
                     height="16" 
@@ -384,7 +386,7 @@
                 </div>
               </div>
             </div>
-            <div class="d-none d-lg-flex col col-lg justify-content-center mapouter">
+            <div class="iframe-maps col col-lg justify-content-center mapouter">
               <div class="gmap_canvas">
                 <iframe 
                 width="300" 
@@ -424,7 +426,7 @@
                   </a>
                 </div>
                 <div>
-                  <a href="https://goo.gl/maps/wncZ93MKMvU3MMwdA" role="button" target="-blank" class="btn btn-outline-warning d-lg-none">
+                  <a href="https://goo.gl/maps/wncZ93MKMvU3MMwdA" role="button" target="-blank" class="btn btn-outline-warning bouton-localiser">
                     <svg xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
                     height="16" 
@@ -438,7 +440,7 @@
                 </div>
               </div>
             </div>
-            <div class="d-none d-lg-flex col col-lg justify-content-center mapouter">
+            <div class="iframe-maps col col-lg justify-content-center mapouter">
               <div class="gmap_canvas">
                 <iframe 
                 width="300" 
