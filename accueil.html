@@ -14,13 +14,10 @@
 
 <body>
   <header class="navbar navbar-expand-md navbar-light bg-warning">
-    <nav class="container-xxl flex-wrap" aria-label="Main navigation" id="HautDePage">
-
+    <nav class="container flex-wrap" aria-label="Main navigation" id="HautDePage">
       <a href="#" class="navbar-brand ms-2">
         <img src="./Medias/loud.svg" alt="Logo 'Lectique'" height="60px" width="60px">
       </a>
-        <!--Bar de navigation linéaire pour des tailles d'écran supérieures à medium (tablettes et PC) mais menu 
-          déroulant si inférieures (téléphones)-->
         <button class="navbar-toggler collapsed" 
         type="button" 
         data-bs-toggle="collapse" 
@@ -30,14 +27,13 @@
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="navbar-collapse collapse" id="bdNavbar">
           <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
             <li class="nav-item col-12 col-md-auto">
               <a href="#" class="nav-link p-2 active fw-bold">Accueil</a>
             </li>
             <li class="nav-item col-12 col-md-auto">
-              <a href="./web/critiques1.html" class="nav-link p-2">Nos précédentes critiques</a> 
+              <a href="./web/critiques_page1.html" class="nav-link p-2">Nos précédentes critiques</a> 
             </li>
             <li class="nav-item col-12 col-md-auto">
               <a href="./web/prochains_rdv.html" class="nav-link p-2">Nos prochains rendez-vous</a> 
@@ -63,8 +59,17 @@
         <p class="mb-0">Pour toute demande de renseignements, vous pouvez me contacter à l'adresse mail figurant en bas de page.</p>
         <p>En attendant, bon visionnage!</p>
       </article>
+      
+      <!--Sommaire affiché uniquement sur mobile-->
+      <div class="d-block d-md-none list-group text-center">
+        <a href="#" class="list-group-item list-group-item-warning fw-bold">Sommaire</a>
+        <a href="#notre_association" class="list-group-item list-group-item-action">Notre association</a>
+        <a href="#notre_histoire" class="list-group-item list-group-item-action">Notre histoire</a>
+        <a href="#notre_histoire_la_votre" class="list-group-item list-group-item-action">Et si notre histoire devenait la vôtre?</a>
+      </div>
+
       <article>
-        <div class="overflow-hidden conteneur_image_titre my-4">
+        <div class="overflow-hidden conteneur_image_titre my-4" id="notre_association">
           <img src="./Medias/open-books.jpg" alt="photo livres ouvert" class="img-fluid image_accueil">
           <div class="titre-conteneur">
             <div class="titre d-flex align-items-center justify-content-center">
@@ -86,7 +91,7 @@
         </div>
       </article>
       <article>
-        <div class="overflow-hidden conteneur_image_titre my-4">
+        <div class="overflow-hidden conteneur_image_titre my-4" id="notre_histoire">
           <img src="./Medias/classic-and-rare-books.jpg" 
           alt="Photo femme ouvre un livre" 
           class="img-fluid image_accueil">
@@ -112,7 +117,7 @@
         </div>
       </article>
       <article>
-        <div class="overflow-hidden conteneur_image_titre my-4">
+        <div class="overflow-hidden conteneur_image_titre my-4" id="notre_histoire_la_votre">
           <img src="./Medias/open-single-book.jpg" alt="Photo d'un livre ouvert" class="img-fluid image_accueil">
           <div class="titre-conteneur">
             <div class="titre d-flex align-items-center justify-content-center">
