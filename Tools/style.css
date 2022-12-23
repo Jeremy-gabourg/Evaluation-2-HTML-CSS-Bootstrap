@@ -1,7 +1,7 @@
 /*Importation de la police d'écriture style 'livre'*/
 @font-face{
   font-family: Gentium Book Basic;
-  src: url(../Tools/GentiumBookBasic-Regular.ttf);
+  src: url(GentiumBookBasic-Regular.ttf);
 }
 
 /*Application de la nouvelle police à tout le document*/
